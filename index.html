@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>齒輪 DXF 產生器</title>
+<style>
+body { font-family: Arial; margin: 40px; }
+input { width: 100px; }
+button { padding: 10px 20px; }
+canvas { border:1px solid #aaa; margin-top:20px; }
+</style>
+</head>
+<body>
+<h1>齒輪 DXF 產生器</h1>
+
+模數 m：<input id="mod" type="number" value="2" step="0.1"><br><br>
+齒數 z：<input id="teeth" type="number" value="20"><br><br>
+壓力角 α（度）：<input id="alpha" type="number" value="20"><br><br>
+
+<button onclick="generate()">生成 DXF</button>
+
+<canvas id="preview" width="600" height="600"></canvas>
+
+<script src="gear.js"></script>
+</body>
+</html>
